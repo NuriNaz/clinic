@@ -1,0 +1,240 @@
+*
+{
+    padding: 0;
+    margin:0;
+}
+body
+{
+    background-image: url(./images/doctor1.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+section
+{
+    padding: 100px;
+}
+.Home
+{
+    position: relative;
+    width: 100%;
+    min-height:100vh ;
+    justify-content: center;
+
+}
+.Home .content
+{
+    max-width: 1000px;
+    text-align: center;
+}
+.menu-bar
+{
+    background:rgb(0, 100, 95);
+    text-align: center;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color:#fff
+}
+.active,.menu-bar ul li:hover
+{
+    background:#2bab0d;
+    border-radius: 3px;
+}
+.menu-bar .fa
+{
+    margin-right: 2px;
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background:rgb(0, 100, 0);
+    margin-top:15px;
+    margin-left:-15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin:10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width:150px;
+    padding:10px;
+    border-bottom: 1px dotted  #fff;
+    background:transparent;
+    border-radius:0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color:#b2ff00;
+}
+.sighn-up-form
+{
+    width:300px;
+    box-shadow:0 0 3px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    padding: 25px;
+    margin: 8% auto 0;
+    text-align: center;
+}
+h2
+{
+    padding:10px;
+    margin-top: auto;
+}
+.sighn-up-form h2
+{
+    color:#1c8adb;
+    margin-bottom: 30px;
+
+}
+.input-box
+{
+    border-radius:20px;
+    padding:10px;
+    margin:10px 0;
+    width:100%;
+    border:1px solid #999;
+    outline: none;
+}
+button
+{
+    color:#fff;
+    width: 100%;
+    padding: 10px;
+    border-radius:20px;
+    font-size:15px;
+    margin:10px 0;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+.sighnup-btn
+{
+    background-color:#1c8adb;
+}
+
+.facebook-btn
+{
+    background-color: #21afde;
+}
+a{
+    text-decoration: none;
+}
+hr
+{
+    margin-top:20px;
+    width: 80%;
+}
+.or
+{
+    background:#fff;
+    width:30px;
+    margin:-15px auto 8px;
+}
+
+.container
+{
+    background-image: url("doctor2.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#clinic1
+{
+
+}
+#clinic1 .clinic1
+{
+    flex-direction: column;
+    text-align: center;
+    max-width: 150px;
+    margin:0 auto;
+    padding:80px 0;
+}
+#clinic1 .section-title
+{
+    font-size: 4rem;
+    font-weight: 300;
+    color:black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#clinic1 .clinic1-top p
+{
+    font-size: 1.2rem;
+    margin-top:2px;
+    line-height: 2.0rem;
+    font-weight:200;
+    letter-spacing: .04rem;
+}
+#clinic1 .clinic1-bottom
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#clinic1 .clinic1-item
+{
+    flex-basis:50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding:30px;
+    border-radius:10px;
+    background-image: url(./images/doctor2.jpg);
+    background-size:cover;
+    margin:10px 8%;
+    position: relative;
+    z-index: 1;
+}
+#clinic1 .clinic1-item::after
+{
+    content: '';
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width:100%;
+    background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);
+    opacity: .8;
+    z-index: -1;
+}
+.clinic1 .col-right .icon
+{
+    height: 80px;
+    width:80;
+    margin-bottom:20px;
+}
+
